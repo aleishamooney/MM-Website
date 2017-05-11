@@ -46,7 +46,7 @@ h1, h2{
   text-transform: uppercase;
 }
 
-h3 {
+.rotated-left {
   font-family: 'Fira Sans', sans-serif;
   color: black;
   font-size: 50px;
@@ -55,12 +55,16 @@ h3 {
   display:block;
 }
 
-h4 {
+.rotated-right {
   font-family: 'Fira Sans', sans-serif;
   color: black;
   font-size: 30px;
+  transform: rotateZ(-90deg) translateX(50%);
 }
 
+.social-section{
+  min-height: 30vh;
+}
 
 
 .top-banner{
@@ -104,7 +108,6 @@ img {
 
 }
 
-
 /*Contact form*/
 input, textarea{
   display:block;
@@ -134,41 +137,4 @@ button{
 
 .profile{
   max-width:50%;
-}
-
-nav{
-
-}
-
-nav a{
-
-}
-
-/*---banner section styles---*/
-/*-background image goes in here-*/
-
-/*---image reel styles---*/
-
-
-/*---About Section Styles---*/
-section.about{
-
-}
-about.h2{
-
-}
-
-/*---where to find links styles---*/
-section.{
-
-}
-
-/*---contact form styles---*/
-section.{
-
-}
-
-/*---Footer---*/
-footer{
-/*style social media links*/
 }
