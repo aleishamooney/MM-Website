@@ -1,0 +1,174 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  /*border:1px solid salmon;*/
+}
+
+[class*=col-], [class^=col] {
+  padding:0;
+}
+
+/*---body---*/
+body{
+  font-family: 'Roboto', sans-serif;
+  color: black
+  font-size: 20px
+}
+nav{
+    border:1px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav .nav-link{
+    display:inline-block;
+    font-size: 1.2rem;
+    padding:40px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover{
+  background-color: salmon;
+  color: white;
+  text-decoration: none;
+}
+
+/*---headings---*/
+h1, h2{
+  font-family: 'Francois One', sans-serif;
+  color: black;
+  font-size: 170px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  font-size: 50px;
+  transform: rotateZ(90deg) translateX(50%);
+  text-transform: uppercase;
+  display:block;
+}
+
+h4 {
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+
+
+.top-banner{
+  background-image: url("/images/bannerbackground.jpg");
+  background-size:cover;
+  background-position:center;
+  min-height: 50vh;
+}
+
+footer a{
+  border: 1px solid black;
+  color: black;
+  padding: 2%;
+  display: inline-block;
+  border-radius:100%;
+  text-decoration:none;
+  align: right;
+}
+
+a:hover{
+  color:purple;
+  text-decoration:underline;
+  /*transition: 2sec;*/
+}
+
+img {
+  max-width:100%;
+}
+
+/*about me section*/
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content{
+  text-align:center;
+  line-height: 1.8;
+  padding: 0 10% 0 10%;
+
+}
+
+
+/*Contact form*/
+input, textarea{
+  display:block;
+  width: 100%;
+  padding:1%;
+  border: 1px solid black;
+  /* Rounded borders: border-radius:20px; */
+  font-size: 10px;
+}
+
+label{
+  margin:20px 0px 5px 0px;
+  display: block;
+  font-size: 15px;
+}
+
+.contact{
+  padding: 2%;
+}
+
+button{
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  margin: 10px 0px 0px 0px;
+}
+
+.profile{
+  max-width:50%;
+}
+
+nav{
+
+}
+
+nav a{
+
+}
+
+/*---banner section styles---*/
+/*-background image goes in here-*/
+
+/*---image reel styles---*/
+
+
+/*---About Section Styles---*/
+section.about{
+
+}
+about.h2{
+
+}
+
+/*---where to find links styles---*/
+section.{
+
+}
+
+/*---contact form styles---*/
+section.{
+
+}
+
+/*---Footer---*/
+footer{
+/*style social media links*/
+}
