@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Michelle Mooney</title>
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Fira+Sans|Roboto" rel="stylesheet">
-    <script src="https://use.fontawesome.com/610717e846.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-  </head>
-<body>
-
-<!-- header section -->
-<header>
-
-  <nav>
-    <div class="grid-spaceBetween">
-      <a href="about" class="col-2">about</a>
-      <a href="https://www.etsy.com/nz/shop/ThePaperAddiction" class="col-2" target="_blank">store</a>
-      <!-- <img src="images/logoplaceholder.png" width="200" height="100"> -->
-      <a href="blog" class="col-2">blog</a>
-      <a href="contact" class="col-2">contact</a>
-      </div>
-  </nav>
-</header>
+---
+layout: default
+book-images:
+  - image: 3a
+  - image: 3b
+  - image: 3c
+  - image: 3d
+  - image: 3e
+  - image: 3f
+  - image: 3g
+  - image: 3h
+  - image: 3i
+  - image: 3j
+  - image: 3k
+  - image: 3l
+---
 
 <!-- banner section -->
 <section class="top-banner">
@@ -34,51 +26,20 @@
 <!-- image reel -->
 <section class= "image grid">
   <!-- input grid? -->
+  {% for image in page.book-images %}
   <div class="col-1">
-    <img src="images/3a.jpg">
+    <img src="images/{{ image.image }}.jpg">
   </div>
-  <div class="col-1">
-    <img src="images/3b.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3c.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3d.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3e.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3f.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3g.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3h.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3i.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3j.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3k.jpg">
-  </div>
-  <div class="col-1">
-    <img src="images/3l.jpg">
-  </div>
+  {% endfor %}
 </section>
 
 <!-- about me -->
-<section class="grid">
+<section class="grid about-section">
   <div class="col-2">
     <img src="images/profilepic.jpeg" >
   </div>
-  <div class="col-8">
-  <p>I love to make stuff, mostly with paper. I love the vintage style and started to create my own vintage
+  <div class="col-8 center-container">
+  <p class="about-content">I love to make stuff, mostly with paper. I love the vintage style and started to create my own vintage
 papers when I couldn’t find or afford the ‘real’ vintage stuff. I live in New Zealand and we love DIY.
 So I learned how to make my own papers and books. I have been paper crafting for nearly 5 years and my bucket list includes teaching book making my way.</p>
   </div>
@@ -90,10 +51,10 @@ So I learned how to make my own papers and books. I have been paper crafting for
 <!-- where to find links -->
 <section>
   <div class="grid">
-      <div class="col-4">
+      <div class="col-2">
         <h4>where to find me</h4>
       </div>
-    <div class="col-6">
+    <div class="col-10">
     <a href="https://www.youtube.com/user/thepaperaddiction" target="_blank">youtube</a>
     <a href="https://www.etsy.com/" target="_blank">store</a>
     <a href="https://www.instagram.com/thepaperaddiction/" target="_blank">instagram</a>
@@ -122,26 +83,3 @@ So I learned how to make my own papers and books. I have been paper crafting for
 <!-- instagram feed -->
 <section>
 </section>
-
-<!-- footer section -->
-<footer>
-  <div class="grid-spaceBetween">
-    <div class="col-3">
-      <p>disclaimer</p>
-    </div>
-      <div class="col-3">
-      <a href="https://wwww.instagram.com/thepaperaddiction/" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/thepaperaddiction" title="Facebook" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href="https://nz.pinterest.com/paperaddiction/" title="Pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/user/thepaperaddiction" title="Youtube" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-      <a href="https://www.etsy.com/nz/shop/ThePaperAddiction" title="Etsy" target="_blank"><i class="fa fa-etsy" aria-hidden="true"></i></a>
-      <a href="mailto:hello@michellemooney.com" title="Email Me" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/main.js"></script>
-
-</body>
-</html>
