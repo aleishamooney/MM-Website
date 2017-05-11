@@ -1,0 +1,85 @@
+---
+layout: default
+book-images:
+  - image: 3a
+  - image: 3b
+  - image: 3c
+  - image: 3d
+  - image: 3e
+  - image: 3f
+  - image: 3g
+  - image: 3h
+  - image: 3i
+  - image: 3j
+  - image: 3k
+  - image: 3l
+---
+
+<!-- banner section -->
+<section class="top-banner">
+ <div>
+   <h1>HELLO</h1>
+   <h2>I'M MICHELLE</h2>
+ </div>
+</section>
+
+<!-- image reel -->
+<section class= "image grid">
+  <!-- input grid? -->
+  {% for image in page.book-images %}
+  <div class="col-1">
+    <img src="images/{{ image.image }}.jpg">
+  </div>
+  {% endfor %}
+</section>
+
+<!-- about me -->
+<section class="grid">
+  <div class="col-2">
+    <img src="images/profilepic.jpeg" >
+  </div>
+  <div class="col-8 center-container">
+  <p class="about-content">I love to make stuff, mostly with paper. I love the vintage style and started to create my own vintage
+papers when I couldn’t find or afford the ‘real’ vintage stuff. I live in New Zealand and we love DIY.
+So I learned how to make my own papers and books. I have been paper crafting for nearly 5 years and my bucket list includes teaching book making my way.</p>
+  </div>
+  <div class="col-2">
+    <h3>about</h3>
+  </div>
+</section>
+
+<!-- where to find links -->
+<section>
+  <div class="grid">
+      <div class="col-4">
+        <h4>where to find me</h4>
+      </div>
+    <div class="col-6">
+    <a href="https://www.youtube.com/user/thepaperaddiction" target="_blank">youtube</a>
+    <a href="https://www.etsy.com/" target="_blank">store</a>
+    <a href="https://www.instagram.com/thepaperaddiction/" target="_blank">instagram</a>
+    <a href="https://nz.pinterest.com/paperaddiction/" target="_blank">pinterest</a> </div>
+  </div>
+</section>
+
+<!-- contact form -->
+<section class="grid">
+    <div class="col-10 contact">
+      <form method="POST" action="http://formspree.io/aleishamooney@gmail.com">
+        <label for="name">Name</label>
+        <input type="name" name="name" placeholder="Your name">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Your email">
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  <div class="col-2">
+    <h3>get in touch</h3>
+  </div>
+</section>
+
+<!-- instagram feed -->
+<section>
+</section>
