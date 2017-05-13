@@ -78,6 +78,10 @@ h1, h2{
   padding: 0 10% 0 10%;
 }
 
+/*--image reel--*/
+section .image{
+}
+
 /*--Where to find me links--*/
 .social-section{
   min-height: 30vh;
@@ -128,9 +132,7 @@ img {
   max-width:100%;
 }
 
-/*--image reel--*/
-section .image{
-}
+
 
 /*Contact form*/
 input, textarea{
