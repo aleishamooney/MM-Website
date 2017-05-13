@@ -60,7 +60,7 @@ h1, h2{
   font-family: 'Fira Sans', sans-serif;
   color: black;
   font-size: 50px;
-  transform: rotateZ(90deg) translateX(55%);
+  transform: rotateZ(90deg) translateX(68%);
   text-transform: uppercase;
   display:block;
 }
@@ -69,7 +69,8 @@ h1, h2{
   font-family: 'Fira Sans', sans-serif;
   color: black;
   font-size: 30px;
-  transform: rotateZ(-90deg) translateX(-20%);
+  transform: rotateZ(-90deg) translateX(-40%);
+  text-align: center;
 }
 
 /*about me section*/
