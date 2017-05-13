@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="OTcwZjRjMzQtZGUzYS00NGQxLThlN2YtY2RhMDBkODg1Y2U0NjM2MzAxNDY1MjI4MDgwMDc0"></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -18,34 +18,42 @@
 
     <nav>
       <div class="grid">
+        <a href="/index.html" class="col-2 nav-link">home</a>
         <a href="/about.html" class="col-2 nav-link">about</a>
         <!-- <a href="https://www.etsy.com/nz/shop/ThePaperAddiction" class="col-2 nav-link" target="_blank">shop etsy</a> -->
-        <a href="/store.html">store *</a>
         <div class="col-4">
         <!-- <img src="images/logoplaceholder2.png" width="200" height="100"> -->
-        <img src="images/logoplaceholder.png">
+        <img src="/images/logoplaceholder.png">
         <!-- <h3>the paper addiction</h3> -->
         </div>
-        <a href="blog" class="col-2 nav-link">blog</a>
+        <a href="/store.html" class="col-2 nav-link">store</a>
+        <!-- <a href="blog" class="col-2 nav-link">blog</a> -->
         <a href="/contact.html" class="col-2 nav-link">contact</a>
         </div>
     </nav>
   </header>
 
 
-<section class="product-banner">
-  <h1>Vintage Journal</h1>
-</section>
+<section class="product-banner" style="background-image: url('/images/products/vintage-journal/3c.jpg')">
+  <h1>vintage journal</h1>
+</section class= "border">
 
-<section class="sidebar">
+<div class="grid">
+<section class="col-4 sidebar">
   <div class="product-overview">
     <h2>Overview</h2>
     <ul>
-      <li>1 feature of the product</li>
-      <li>2 feature of the product</li>
-      <li>3 feature of the product</li>
-      <li>4 feature of the product</li>
-      <li>5 feature of the product</li>
+      
+      <li> 1 feature of the product </li>
+      
+      <li> 2 feature of the product </li>
+      
+      <li> 3 feature of the product </li>
+      
+      <li> 4 feature of the product </li>
+      
+      <li> 5 feature of the product </li>
+      
     </ul>
   </div>
   <div class="shopping-cart">
@@ -54,34 +62,55 @@
     <button
         class="snipcart-add-item"
         data-item-id="1"
-        data-item-name="Vintage Journal"
-        data-item-price="80.00"
-        data-item-weight="20"
+        data-item-name="vintage journal"
+        data-item-price="80"
+        data-item-weight="0"
         data-item-url=""
         data-item-description="1x Vintage Journal">
             Add to Cart
     </button>
   </div>
   <div class="seller-id">
-    <img src="images/profilepic.jpeg" />
-    <h2>Hi, I'm Michelle</h2>
-    <p>this is a small description about Michelle</p>
+    <div class="grid">
+    <img class="col-4"src="/images/profilepic.jpeg" />
+    <h2 class="col-8">Hi, I'm Michelle</h2>
+    </div>
+    <p>I live in Wellington, New Zealand. I have been making things for many years, but in the last three years I have become addicted to paper craft and book binding. I am self-taught and love to make up new ways to create. I make a lot of books on my journey and I am sharing them here as I run out of storage space! </p>
   </div>
 </section>
 
-<section class="product-description">
-  <h3>Intro blurb/description to the vintage journal.</h3>
-  <p>The curiosities vintage style Journal is made from an assortment of different weights of tea dye plain papers. It includes pockets and tags for capturing a special occasion or memory. A lovely place to keep your treasured memories, photos, notes and stories, or anything else you can think of!
+<section class=" col-8 product-description">
+  <h3>Intro blurb/description to the vintage journal</h3>
+  <p> The curiosities vintage style Journal is made from an assortment of different weights of tea dye plain papers. It includes pockets and tags for capturing a special occasion or memory. A lovely place to keep your treasured memories, photos, notes and stories, or anything else you can think of!
 It features hand sewing for the binding. and comes wrapped in hand dyed seam binding.
-  </p>
+ </p>
 
-  <section class="product-photos">
-    <img src="images/products/vintage-journal/3a.jpg" />
-    <img src="images/products/vintage-journal/3b.jpg" />
-    <img src="images/products/vintage-journal/3c.jpg" />
-    <img src="images/products/vintage-journal/3d.jpg" />
+  <section class="grid product-photos">
+    
+    <div class="col-3">
+      <img src=" /images/products/vintage-journal/3a.jpg" />
+      <!-- <p> This is image 1 </p> -->
+    </div>
+    
+    <div class="col-3">
+      <img src=" /images/products/vintage-journal/3b.jpg" />
+      <!-- <p> This is image 2 </p> -->
+    </div>
+    
+    <div class="col-3">
+      <img src=" /images/products/vintage-journal/3c.jpg" />
+      <!-- <p> This is image 3 </p> -->
+    </div>
+    
+    <div class="col-3">
+      <img src=" /images/products/vintage-journal/3d.jpg" />
+      <!-- <p> This is image 4 </p> -->
+    </div>
+    
   </section>
+
 </section>
+</div>
 
 
 
@@ -89,7 +118,7 @@ It features hand sewing for the binding. and comes wrapped in hand dyed seam bin
     <footer>
       <div class="grid-spaceBetween">
         <div class="col-3">
-          <p>disclaimer</p>
+          <!-- <p>disclaimer</p> -->
         </div>
           <div class="col-3">
           <a href="https://wwww.instagram.com/thepaperaddiction/" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>

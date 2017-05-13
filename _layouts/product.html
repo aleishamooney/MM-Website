@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<section class="product-banner" style="background-image: url('{{ page.feature-image}}')">
+  <h1>{{ page.name }}</h1>
+</section class= "border">
+
+<div class="grid">
+<section class="col-4 sidebar">
+  <div class="product-overview">
+    <h2>Overview</h2>
+    <ul>
+      {% for feature in page.features %}
+      <li> {{ feature.name }} </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="shopping-cart">
+    <h2>buy online</h2>
+    <p>Price: NZ ${{ page.price }}</p>
+    <button
+        class="snipcart-add-item"
+        data-item-id="{{ page.productid }}"
+        data-item-name="{{ page.name }}"
+        data-item-price="{{ page.price }}"
+        data-item-weight="0"
+        data-item-url=""
+        data-item-description="1x Vintage Journal">
+            Add to Cart
+    </button>
+  </div>
+  <div class="seller-id">
+    <div class="grid">
+    <img class="col-4"src="/images/profilepic.jpeg" />
+    <h2 class="col-8">Hi, I'm Michelle</h2>
+    </div>
+    <p>I live in Wellington, New Zealand. I have been making things for many years, but in the last three years I have become addicted to paper craft and book binding. I am self-taught and love to make up new ways to create. I make a lot of books on my journey and I am sharing them here as I run out of storage space! </p>
+  </div>
+</section>
+
+<section class=" col-8 product-description">
+  <h3>{{ page.intro }}</h3>
+  <p> {{ content }} </p>
+
+  <section class="grid product-photos">
+    {% for image in page.product-images %}
+    <div class="col-3">
+      <img src=" {{ image.image }}" />
+      <!-- <p> {{ image.caption }} </p> -->
+    </div>
+    {% endfor %}
+  </section>
+
+</section>
+</div>

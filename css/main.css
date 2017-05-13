@@ -24,6 +24,11 @@ nav{
     margin:0;
     padding:0;
     text-align:center;
+    height: 100px;
+}
+
+nav img {
+  height: 200px;
 }
 
 nav .nav-link{
@@ -36,9 +41,10 @@ nav .nav-link{
 }
 
 .nav-link:hover{
-  background-color: salmon;
+  background-color: #e1d5cf;
   color: white;
   text-decoration: none;
+  height: 100px
 }
 
 /*---headings---*/
@@ -47,13 +53,14 @@ h1, h2{
   color: black;
   font-size: 170px;
   text-transform: uppercase;
+  text-shadow: 2px 2px #e1d5cf
 }
 
 .rotated-left {
   font-family: 'Fira Sans', sans-serif;
   color: black;
   font-size: 50px;
-  transform: rotateZ(90deg) translateX(50%);
+  transform: rotateZ(90deg) translateX(55%);
   text-transform: uppercase;
   display:block;
 }
@@ -123,16 +130,15 @@ footer a{
 }
 
 a:hover{
-  color:purple;
-  text-decoration:underline;
+  color:#e1d5cf;
+  text-decoration:none;
+  text-shadow: 0.5px 0.5px black;
   /*transition: 2sec;*/
 }
 
 img {
   max-width:100%;
 }
-
-
 
 /*Contact form*/
 input, textarea{
@@ -163,4 +169,77 @@ button{
 
 .profile{
   max-width:50%;
+}
+
+/*--product page section--*/
+.product-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-banner h1 {
+  color: #e1d5cf;
+  text-shadow: 2px 2px black;
+}
+
+.sidebar {}
+
+.product-overview {
+}
+
+.product-overview h2, .shopping-cart h2 {
+font-size: 40px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.seller-id h2 {
+font-size: 40px;
+text-transform: uppercase;
+text-align: left;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.product-overview li{
+  line-height: 1.8;
+  padding: 0 10% 0 10%;
+}
+
+.shopping-cart p{
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 10% 0 10%;
+}
+
+.shopping-cart button {
+}
+
+.seller-id img {
+  border-radius: 50%;
+  height: 145px;
+}
+
+.seller-id p{
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 10% 0 10%;
+}
+
+.product-description h3{
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.product-description p{
+  line-height: 1.8;
+  padding: 0 10% 0 10%;
+  text-align: center;
 }
