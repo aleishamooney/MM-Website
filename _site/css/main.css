@@ -141,6 +141,10 @@ img {
   max-width:100%;
 }
 
+.instagram {
+  margin: 50px 0 10px 0;
+}
+
 /*Contact form*/
 input, textarea{
   display:block;
@@ -223,7 +227,7 @@ align-items: center;
 
 .seller-id img {
   border-radius: 50%;
-  height: 145px;
+  height: 140px;
 }
 
 .seller-id p{
@@ -237,10 +241,12 @@ align-items: center;
   color: black;
   font-size: 30px;
   text-align: center;
+  margin: 15px 0 10px 0;
 }
 
 .product-description p{
   line-height: 1.8;
   padding: 0 10% 0 10%;
   text-align: center;
+  margin: 10px 0 15px 0;
 }
